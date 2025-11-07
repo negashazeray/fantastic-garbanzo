@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Retro Portfolio</title>
+  <style>
+    /* === 90s Retro Minimalist + Colorful Palette === */
+
+    :root {
+      --yellow: #FFD300;
+      --brown: #8B5E3C;
+      --teal: #009688;
+    }
+
+    body {
+      background-color: var(--yellow);
+      color: var(--brown);
+      font-family: "Courier New", monospace;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background: var(--teal);
+      color: #fff;
+      padding: 20px 10px;
+      border-bottom: 5px double var(--brown);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.3em;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px var(--brown);
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--brown);
+      padding: 6px 14px;
+      border: 2px solid var(--brown);
+      background: #fff;
+      margin: 0 6px;
+      display: inline-block;
+      transition: all 0.2s ease-in-out;
+    }
+
+    nav a:hover {
+      background: var(--brown);
+      color: var(--yellow);
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section h2 {
+      border-bottom: 3px solid var(--brown);
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      color: var(--teal);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      border: 3px solid var(--brown);
+      padding: 15px;
+      background-color: #fff;
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+      border: 2px solid var(--brown);
+    }
+
+    .project h3 {
+      color: var(--teal);
+      margin-top: 10px;
+    }
+
+    footer {
+      background: var(--teal);
+      color: #fff;
+      border-top: 5px double var(--brown);
+      padding: 15px;
+      font-size: 0.9em;
+      text-shadow: 1px 1px var(--brown);
+    }
+
+    /* Responsive Typography */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+      nav a {
+        margin: 4px 2px;
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Retro Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm a designer and developer blending nostalgic 90s web style with modern simplicity. 
+      My work focuses on bold colors, readable layouts, and timeless design charm.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="https://placekitten.com/400/300" alt="Project 1">
+        <h3>Project One</h3>
+        <p>A bold retro landing page inspired by early digital aesthetics.</p>
+      </div>
+      <div class="project">
+        <img src="https://placekitten.com/401/300" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>A responsive personal site that keeps the retro soul alive.</p>
+      </div>
+      <div class="project">
+        <img src="https://placekitten.com/402/300" alt="Project 3">
+        <h3>Project Three</h3>
+        <p>An experimental 90s color-driven interface for creative portfolios.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Let’s build something cool together:</p>
+    <p><a href="mailto:youremail@example.com" style="color:var(--brown); text-decoration:underline;">youremail@example.com</a></p>
+  </section>
+
+  <footer>
+    © 2025 Your Name — Retro Color Revival
+  </footer>
+</body>
+</html>
